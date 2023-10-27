@@ -54,7 +54,7 @@ export default function Intro() {
             <div className="dropdown">
               <label
                 tabIndex={0}
-                className="btn-base-200 btn btn-circle btn-ghost mr-1 lg:hidden"
+                className="btn-base-200 btn btn-circle btn-ghost lg:hidden -mr-5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export default function Intro() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-2xl normal-case">Extract Vital Softgel</a>
+            <a className="btn btn-ghost xl:text-2xl text-sm normal-case">Extract Vital Softgel</a>
             <div className="hidden lg:flex">
               <ul className="menu menu-horizontal p-0 font-medium">
                 <li>
