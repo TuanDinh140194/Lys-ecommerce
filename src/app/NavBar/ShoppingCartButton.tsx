@@ -41,7 +41,7 @@ export async function ShoppingCartButton({ cart }: ShoppingCartButtonProp) {
 
       <div
         tabIndex={0}
-        className="card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow z-10"
+        className="card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow z-40"
       >
         <div className="card-body">
           <span className="text-lg font-bold "> {cart?.size || 0} Items</span>

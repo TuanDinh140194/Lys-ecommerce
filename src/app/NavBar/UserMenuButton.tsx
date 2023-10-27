@@ -12,7 +12,7 @@ interface UserMenuButtonProp {
 export default function UserMenuButton({ session }: UserMenuButtonProp) {
   const user = session?.user;
   return (
-    <div className="dropdown dropdown-end">
+    <div className="dropdown dropdown-end z-50">
       <label tabIndex={0} className="btn btn-circle btn-ghost">
         {user ? (
           <Image

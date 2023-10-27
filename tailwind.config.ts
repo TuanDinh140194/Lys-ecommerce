@@ -11,7 +11,7 @@ const config: Config = {
     themes: [
       {
         lightTheme: {
-          primary: "#f4aa3a",
+          primary: "#1967d2",
           secondary: "#f4f4a1",
           accent: "#1be885",
           neutral: "#272136",
@@ -21,7 +21,7 @@ const config: Config = {
           warning: "#f79926",
           error: "#ea535a",
           body: {
-            "background-color": "#e3e6e6",
+            "background-color": "base",
           },
         },
       },
