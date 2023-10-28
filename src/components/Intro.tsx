@@ -36,6 +36,7 @@ const THEMES = [
 
 export default function Intro() {
   const [theme, setTheme] = React.useState("light");
+   
 
   React.useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -46,10 +47,31 @@ export default function Intro() {
     setTheme(val);
   };
 
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  // Function to handle the scroll event
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  // Add an event listener for the scroll event when the component mounts
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-30 bg-base-100 pt-5">
-      <div className="container m-auto max-w-7xl">
-        <div className="navbar px-0">
+    
+      <div className="container max-w-full mt-10 -mb-5 z-20">
+        <div className={`transition-all navbar max-w-7xl mx-auto px-0 ${isScrolled ? "transition-all shadow-lg -mt-10 max-w-full" : ""}` }>
           <div className="navbar-start">
             <div className="dropdown">
               <label
@@ -89,7 +111,7 @@ export default function Intro() {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost xl:text-2xl text-sm normal-case">Extract Vital Softgel</a>
+            <a className="btn btn-ghost xl:text-2xl text-sm normal-case text-amber-900">Extract Vital Softgel</a>
             <div className="hidden lg:flex">
               <ul className="menu menu-horizontal p-0 font-medium">
                 <li>
@@ -107,7 +129,9 @@ export default function Intro() {
               </ul>
             </div>
           </div>
-          <div className="navbar-center hidden lg:flex"></div>
+          <div className="navbar-center hidden lg:flex">
+            
+          </div>
           <div className="navbar-end">
             <div className="text-end mr-2">
               <p className="text-sm font-semibold">
@@ -116,6 +140,7 @@ export default function Intro() {
               <p className="text-xs font-semibold text-amber-700">
                 Enjoy our saving this autumn*
               </p>
+              
             </div>
             <div>
               <button className="btn btn-primary mr-5">
@@ -146,6 +171,6 @@ export default function Intro() {
           </div>
         </div>
       </div>
-    </header>
+   
   );
 }

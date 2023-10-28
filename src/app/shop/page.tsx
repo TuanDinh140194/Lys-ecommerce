@@ -29,7 +29,7 @@ export default async function Home({
   });
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center py-12">
       {currentPage === 1 && (
         <div className="hero rounded-xl bg-base-200">
           <div className="hero-content flex-col lg:flex-row">

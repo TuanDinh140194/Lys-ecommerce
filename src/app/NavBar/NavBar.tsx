@@ -24,7 +24,7 @@ export default async function Navbar() {
       <div className="navbar m-auto max-w-7xl flex-col gap-2 sm:flex-row">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost text-xl normal-case">
-            <Image src={logo} height={60} width={100} alt="LYS logo" />
+            <Image src={logo} height={60} width={120} alt="LYS logo" />
           </Link>
         </div>
 
