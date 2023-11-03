@@ -1,4 +1,4 @@
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import { prisma } from "../lib/db/prisma";
 import ProductCard from "@/components/ProductCard";
@@ -8,6 +8,11 @@ import Link from "next/link";
 interface HomeProps {
   searchParams: { page: string };
 }
+
+export const metadata: Metadata = {
+  title: "LYS - Shop",
+  description: "We make you love yourself",
+};
 
 export default async function Home({
   searchParams: { page = "1" },

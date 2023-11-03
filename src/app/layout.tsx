@@ -5,7 +5,7 @@ import Navbar from "./NavBar/NavBar";
 import Footer from "./Footer";
 import SessionProvider from "./SessionProvider";
 import IntroForHome from "@/app/IntroForHome";
-
+import Canvas from "@/components/Canvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,14 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
+    <html lang="en" className="!scroll-smooth">
       <body className={inter.className}>
         <SessionProvider>
           <Navbar />
-          <IntroForHome/>
-          <main className="m-auto -mt-10 mb-4 min-w-[300px] max-w-7xl p-4">
+          <IntroForHome />
+          <main className="m-auto -mt-12 min-w-[300px] max-w-7xl p-4">
             {children}
           </main>
+          <div className="max-w-7xl opacity-80">
+            <Canvas />
+          </div>
           <Footer />
         </SessionProvider>
       </body>

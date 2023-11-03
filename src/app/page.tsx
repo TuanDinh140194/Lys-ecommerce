@@ -17,9 +17,7 @@ export default function Landing() {
       <Event />
       <Benefit />
       <Testimonial />
-      <div className="max-w-5xl opacity-80">
-        <Canvas />
-      </div>
+      
     </div>
   );
 }

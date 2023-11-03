@@ -4,7 +4,7 @@ import logo from "@/app/assets/logo3.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-950 p-10 text-neutral-content ">
+    <footer className="bg-amber-950 p-10 text-neutral-content">
       <div className="footer m-auto max-w-7xl">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost text-xl normal-case">

@@ -8,10 +8,14 @@ export default function IntroForHome() {
 
   return (
     <>
-      {isHomePage && (
-        <header className="sticky top-0 z-30 bg-base-100 pt-5">
+      {isHomePage ? (
+        <header className="sticky top-0 z-30 pt-5 backdrop-blur-xl backdrop-filter">
           <Intro />
         </header>
+      ) : (
+        <div className="mt-20">
+          
+        </div>
       )}{" "}
     </>
   );
