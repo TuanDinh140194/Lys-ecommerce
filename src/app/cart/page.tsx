@@ -1,3 +1,5 @@
+
+import CheckOutButton from "@/components/CheckOutButton";
 import { getCart } from "../lib/db/cart";
 import formatPrice from "../lib/format";
 import { setProductQuantity } from "./actions";
@@ -7,8 +9,11 @@ export const metadata = {
   title: "Your Cart - LYS",
 };
 
+
 export default async function CartPage() {
   const cart = await getCart();
+ 
+  const isDisabled = !cart?.items.length;
   return (
     <div>
       <h1 className="mb-6 text-3xl font-bold">Shopping Cart</h1>
@@ -24,7 +29,7 @@ export default async function CartPage() {
         <p className="mb-3 font-bold">
           Total: {formatPrice(cart?.subtotal || 0)}
         </p>
-        <button className="btn btn-primary sm:w-[200px]">Checkout</button>
+        <CheckOutButton isDisabled={isDisabled}/>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import SessionProvider from "./SessionProvider";
 import IntroForHome from "@/app/IntroForHome";
 import Canvas from "@/components/Canvas";
+import "@stripe/stripe-js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +26,12 @@ export default function RootLayout({
         <SessionProvider>
           <Navbar />
           <IntroForHome />
+
           <main className="m-auto -mt-12 min-w-[300px] max-w-7xl p-4">
             {children}
           </main>
-          <div className="max-w-7xl opacity-80">
+
+          <div className="hidden max-w-7xl opacity-80 xl:flex">
             <Canvas />
           </div>
           <Footer />
