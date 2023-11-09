@@ -1,24 +1,23 @@
 "use client";
 
 import React, { useState } from "react";
-import { loadStripe } from "@stripe/stripe-js";
-import { error } from "console";
+import getStripe from "@/utils/get-stripejs";
 
 interface CheckOutButtonProps {
   isDisabled: boolean;
 }
 
-let stripePromise: any;
+//let stripePromise: any;
 
-//Load Stripe to Checkout
-const getStripe = () => {
-  if (!stripePromise) {
-    stripePromise = loadStripe(
-      "pk_test_51N71cdDTggahj9sxb0nEAKsxnQK9W66BXay41Y8GUlh9ODtPP4TEqWMBxoWAPN423b4lrvmgO0FvCbvqNJj42udW00DcJfyCWZ",
-    );
-  }
-  return stripePromise;
-};
+// //Load Stripe to Checkout
+// const getStripe = () => {
+//   if (!stripePromise) {
+//     stripePromise = loadStripe(
+//       "pk_test_51N71cdDTggahj9sxb0nEAKsxnQK9W66BXay41Y8GUlh9ODtPP4TEqWMBxoWAPN423b4lrvmgO0FvCbvqNJj42udW00DcJfyCWZ",
+//     );
+//   }
+//   return stripePromise;
+// };
 
 export default function CheckOutButton({ isDisabled }: CheckOutButtonProps) {
   const [loading, setLoading] = useState(false);
@@ -35,18 +34,28 @@ export default function CheckOutButton({ isDisabled }: CheckOutButtonProps) {
       method: "POST",
       //body: JSON.stringify(cartDetails),
     });
+
+    //Handle server error
+    if ((response as any).statusCode === 500) {
+      console.error((response as any).message);
+      return;
+    }
+
     const data = await response.json(); //Get data from stripe
 
     const stripe = await getStripe();
 
-    const result = await stripe.redirectToCheckout({
+    const { error } = await stripe!.redirectToCheckout({
       //Get page checkout from data of Stripe
       sessionId: data.id,
     });
 
-    if (result?.error) {
-      console.error(result);
-      setStripeError(result.error.message);
+    // If `redirectToCheckout` fails due to a browser or network
+    // error, display the localized error message to your customer
+    // using `error.message`.
+    if (error) {
+      console.warn(error.message);
+      setStripeError(error.message as any);
     }
 
     if (stripeError) alert(stripeError);

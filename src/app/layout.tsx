@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <script src="https://js.stripe.com/v3/" async></script>
+      </head>
       <body className={inter.className}>
         <SessionProvider>
           <Navbar />
