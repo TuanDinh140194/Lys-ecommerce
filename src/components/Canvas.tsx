@@ -23,6 +23,7 @@ const Canvas: FC = () => {
       <canvas
         id="canvas"
         ref={canvasRef}
+        style={{ width: "100%" }}
         width={width}
         height={220}
       ></canvas>

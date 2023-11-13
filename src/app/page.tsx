@@ -1,4 +1,4 @@
-import Canvas from "@/components/Canvas";
+//import Canvas from "@/components/Canvas";
 import HeroIntro from "@/components/HeroIntro";
 import Ingredient from "@/components/Ingredient";
 import Event from "@/components/Event";
