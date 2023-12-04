@@ -68,12 +68,10 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="container z-20 -mb-5 mt-5 max-w-full px-">
+    <div className="px- container z-20 -mb-5 mt-5 max-w-full">
       <nav
         className={`navbar mx-auto max-w-7xl px-0 transition-all ${
-          isScrolled
-            ? "-mt-10 max-w-full shadow-lg transition-all"
-            : ""
+          isScrolled ? "-mt-10 max-w-full shadow-lg transition-all" : ""
         } `}
       >
         <div className="navbar-start">
@@ -105,37 +103,44 @@ export default function Intro() {
                 <a href="#!">Home</a>
               </li>
               <li>
-                <a href="#!">Shop</a>
+                <a href="#!">Products</a>
               </li>
               <li>
-                <a href="#!">About</a>
+                <a href="#!">News</a>
               </li>
               <li>
-                <a href="#!">Work</a>
+                <a href="#!">About Us</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-sm normal-case text-amber-900 xl:text-2xl">
+          <a className="btn btn-ghost text-sm normal-case xl:text-2xl">
             Extract Vital Softgel
           </a>
           <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal p-0 font-medium">
+          </div>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          {" "}
+          <div className="hidden lg:flex">
+            <ul className="menu menu-horizontal p-0 font-medium text-lg">
               <li>
-                <a href="#!">Home</a>
+                <a href="#!">Products</a>
+              </li>
+              <li>
+                <a href="#!">News</a>
+              </li>
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Testimonials</a>
               </li>
               <li>
                 <a href="#!">Shop</a>
-              </li>
-              <li>
-                <a href="#!">About</a>
-              </li>
-              <li>
-                <a href="#!">Work</a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex"></div>
         <div className="navbar-end">
           <div className="mr-2 text-end">
             <p className="text-sm font-semibold">Buy now only $59.99</p>
@@ -144,7 +149,7 @@ export default function Intro() {
             </p>
           </div>
           <div>
-            <button className="btn btn-primary mr-5">Buy Now</button>
+            <button className="btn btn-info mr-5 text-base-100">Buy Now</button>
           </div>
           {/* <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-primary">

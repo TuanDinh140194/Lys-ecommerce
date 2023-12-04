@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/logo3.png";
+import logo from "@/app/assets/NewLogo.png";
 import { redirect } from "next/navigation";
 import { getCart } from "../lib/db/cart";
 import { ShoppingCartButton } from "./ShoppingCartButton";
@@ -21,9 +21,9 @@ export default async function Navbar() {
   const cart = await getCart();
   return (
     <div className="bg-base-100">
-      <div className="navbar m-auto max-w-7xl flex-col gap-2 sm:flex-row">
+      <div className="navbar m-auto max-w-7xl flex-col gap-2 sm:flex-row ">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost text-xl normal-case">
+          <Link href="/" className="btn btn-ghost text-xl normal-case h-auto">
             <Image src={logo} height={60} width={120} alt="LYS logo" />
           </Link>
         </div>

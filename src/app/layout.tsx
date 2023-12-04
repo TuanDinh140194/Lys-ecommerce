@@ -11,7 +11,7 @@ import "@stripe/stripe-js";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LYS",
+  title: "LYS - Home",
   description: "We make you love yourself",
 };
 
@@ -24,7 +24,10 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <head>
         <script src="https://js.stripe.com/v3/" async></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </head>
       <body className={inter.className}>
         <SessionProvider>

@@ -4,7 +4,7 @@ import Pic1 from "@/app/assets/pic2.png";
 import Pic2 from "@/app/assets/pic1.png";
 import marineImg1 from "@/app/assets/marine1.png";
 import marineImg2 from "@/app/assets/marine2.png";
-import GMP from "@/app/assets/gmp.png";
+import FDA from "@/app/assets/fda-logo.png";
 import ISOGMD from "@/app/assets/Logo-IQS-GMP.png";
 import haccp from "@/app/assets/haccp.png";
 import Image from "next/image";
@@ -21,16 +21,7 @@ const PremiumInfo = [
     height: 800,
     title: "Premium Extract Vital Softgel",
     desciption:
-      "We look for the best, scientifically proven, active ingredients before incorporating them in our formulas",
-  },
-  {
-    src: Pic1,
-    alt: "Picture2",
-    width: 1200,
-    height: 800,
-    title: "Premium Extract Vital Softgel",
-    desciption:
-      "We look for the best, scientifically proven, active ingredients before incorporating them in our formulas",
+      "Vital Cell Softgels [Premium Extracts] include a handful of natural ingredients clinically proven to reduce wrinkles, brown spots, dullness and other signs of aging. And researchers aren’t the only ones paying attention to the softgels.",
   },
   {
     src: Pic1,
@@ -173,16 +164,14 @@ export default function Hero() {
             </div>
           </div>
           <div className="-mt-10 p-6 lg:w-1/3">
-            <h1 className="text-4xl font-bold text-info">
-              {currentImage.title}
-            </h1>
-            <p className="py-6">{currentImage.desciption}</p>
+            <h1 className="text-4xl font-bold">{currentImage.title}</h1>
+            <p className="py-6" data-aos="fade-up">{currentImage.desciption}</p>
 
             <button
               onClick={() => router.push("/shop")}
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-blue-600 px-7 py-2.5 text-white focus:ring-4 focus:ring-blue-300"
+              className="group btn-info relative inline-flex items-center justify-center overflow-hidden rounded-lg px-7 py-2.5 text-white focus:ring-4 focus:ring-blue-300"
             >
-              <span className="z-40">Shop Now</span>
+              <span className="z-40">Learn More</span>
               <svg
                 className="z-40 -mr-1 ml-2 h-3 w-3 transition-all duration-300 group-hover:translate-x-1"
                 fill="currentColor"
@@ -212,7 +201,7 @@ export default function Hero() {
                   // id="html"
                   //name="productType"
                   type="radio"
-                  className="before:content['ef'] before:bg-blue-gray-500 peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-500 text-blue-500 transition-all before:absolute before:left-2/4 before:top-2/4 before:block before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:border-blue-500 checked:before:bg-blue-500 hover:before:opacity-10"
+                  className="before:content['ef'] before:bg-blue-gray-500 peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-info text-blue-500 transition-all before:absolute before:left-2/4 before:top-2/4 before:block before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:border-info checked:before:bg-blue-500 hover:before:opacity-10"
                   //onClick={() => selectInfo(PremiumInfo)}
                   checked={tooltipVisible === true}
                   onChange={() => {
@@ -220,7 +209,7 @@ export default function Hero() {
                     selectInfo(PremiumInfo);
                   }}
                 />
-                <div className="pointer-events-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-blue-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                <div className="pointer-events-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-info opacity-0 transition-opacity peer-checked:opacity-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-3.5 w-3.5"
@@ -255,7 +244,7 @@ export default function Hero() {
                   //id="react"
                   //name="productType"
                   type="radio"
-                  className="before:content['ef'] before:bg-blue-gray-500 peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-500 text-pink-500 transition-all before:absolute before:left-2/4 before:top-2/4 before:block before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:border-blue-500 checked:before:bg-blue-500 hover:before:opacity-10"
+                  className="before:content['ef'] before:bg-blue-gray-500 peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-info text-pink-500 transition-all before:absolute before:left-2/4 before:top-2/4 before:block before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:opacity-0 before:transition-opacity checked:border-info checked:before:bg-blue-500 hover:before:opacity-10"
                   //onClick={() => selectInfo(MarineInfo)}
                   checked={productInfo === MarineInfo}
                   onChange={() => {
@@ -263,7 +252,7 @@ export default function Hero() {
                     selectInfo(MarineInfo);
                   }}
                 />
-                <div className="pointer-events-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-blue-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                <div className="pointer-events-none absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-info opacity-0 transition-opacity peer-checked:opacity-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-3.5 w-3.5"
@@ -295,10 +284,10 @@ export default function Hero() {
           className="min-h-64 h-15 group hero mx-auto my-10 w-3/4 rounded-3xl bg-base-200 bg-opacity-80 shadow-xl transition-opacity duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="hero-content flex-col lg:flex-row">
+          <div className="hero-content flex-col lg:flex-row xl:mr-20">
             <div className="max-w-sm lg:w-1/2 lg:max-w-none">
               <Image
-                src={GMP}
+                src={FDA}
                 alt="GMD"
                 className="rounded-lg"
                 width={100} // Adjust the width as needed
@@ -306,10 +295,9 @@ export default function Hero() {
               />
             </div>
 
-            <div className="max-w-xl">
+            <div className="max-w-xl xl:mr-12">
               <p className="font-semibold">
-                We look for the best, scientifically proven, active ingredients
-                before incorporating them in our formulas
+                FDA Registered Facility Made in a FDA Registered Facility
               </p>
             </div>
           </div>
@@ -349,12 +337,12 @@ export default function Hero() {
                 src={haccp}
                 alt="GMD"
                 className="rounded-lg"
-                width={150} // Adjust the width as needed
+                width={170} // Adjust the width as needed
                 height={150} // Adjust the height as needed
               />
             </div>
 
-            <div className="max-w-xl">
+            <div className="max-w-xl xl:pl-11">
               <p className="font-semibold">
                 Product protocol in accordance with the HACCP, method of control
                 and improvement during the production process
