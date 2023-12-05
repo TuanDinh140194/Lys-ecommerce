@@ -7,6 +7,7 @@ import SessionProvider from "./SessionProvider";
 import IntroForHome from "@/app/IntroForHome";
 import Canvas from "@/components/Canvas";
 import "@stripe/stripe-js";
+import { BrowserRouter } from "react-router-dom";
 
 const inter = Inter({ subsets: ["latin"] });
 

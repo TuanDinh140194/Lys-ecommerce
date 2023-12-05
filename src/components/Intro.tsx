@@ -100,43 +100,51 @@ export default function Intro() {
               className="menu-compact menu dropdown-content rounded-box mt-1 w-52 bg-base-200 p-2 shadow"
             >
               <li>
-                <a href="#!">Home</a>
+                <a href="#products">Products</a>
               </li>
               <li>
-                <a href="#!">Products</a>
+                <a href="#news">News</a>
               </li>
               <li>
-                <a href="#!">News</a>
+                <a href="#missions">Our Mission</a>
               </li>
               <li>
-                <a href="#!">About Us</a>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="/shop">Shop</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-sm normal-case xl:text-2xl">
+          <a className="btn btn-ghost text-sm normal-case xl:text-2xl" href="#">
             Extract Vital Softgel
           </a>
-          <div className="hidden lg:flex">
-          </div>
+          <div className="hidden lg:flex"></div>
         </div>
         <div className="navbar-center hidden lg:flex">
           {" "}
           <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal p-0 font-medium text-lg">
+            <ul className="menu menu-horizontal p-0 text-lg font-medium">
               <li>
-                <a href="#!">Products</a>
+                <a href="#products">Products</a>
               </li>
               <li>
-                <a href="#!">News</a>
+                <a href="#news">News</a>
               </li>
               <li>
-                <a href="#!">About Us</a>
+                <a href="#missions">Our Mission</a>
               </li>
               <li>
-                <a href="#!">Testimonials</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="#!">Shop</a>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="/shop">Shop</a>
               </li>
             </ul>
           </div>

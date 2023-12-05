@@ -13,7 +13,7 @@ export default function Landing() {
       
       <HeroIntro />
       <Event />
-      <Benefit />
+      <Benefit/>
       <Ingredient />
       <AboutUs/>
       <Testimonial />

@@ -13,7 +13,7 @@ export default function Benefit() {
     AOS.init({ duration: 1000, once: true });
   }, []);
   return (
-    <section className="py-10 md:py-20">
+    <section className="py-10 md:py-20" id="products">
       <div className="pb-10 text-center">
         <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Products</h2>
         <p className="sm:text-2x mb-6 text-lg">

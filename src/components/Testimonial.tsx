@@ -8,7 +8,7 @@ import avarta6 from "@/app/assets/avarta/6.png";
 
 export default function Testimonial() {
   return (
-    <section className="bg-base py-10 md:py-16">
+    <section className="bg-base py-10 md:py-16" id="testimonials">
       <div className="container">
         <div className="text-center ">
           <h2 className="mb-4 text-3xl font-bold sm:text-5xl">

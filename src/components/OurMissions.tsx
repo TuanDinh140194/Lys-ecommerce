@@ -12,6 +12,19 @@ export default function Introduction() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.setAttribute("data-use-service-core", true);
+    script.defer = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const [isHoveredLYS, setIsHoveredLYS] = useState(false);
   const [isHoveredCommunity, setIsHoveredCommunity] = useState(false);
   const [isHoveredHealthy, setIsHoveredHealthy] = useState(false);
@@ -50,7 +63,7 @@ export default function Introduction() {
   };
 
   return (
-    <section className="py-10 md:py-16">
+    <section className="py-10 md:py-16" id="missions">
       <div className="container">
         <div className="text-center">
           <h2 className="mb-4 text-3xl font-bold sm:text-5xl">What We Do</h2>
@@ -169,55 +182,19 @@ export default function Introduction() {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center" id="news">
             <p className="mt-10 text-lg sm:text-2xl">
               Keep up to date with our news on social media
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-8 xl:gap-10">
-            <div
-              className="card h-[400px] transform-gpu bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
-              data-aos="fade-up"
-            >
+          <div className="grid grid-cols-1 gap-6 lg:gap-8 xl:gap-10">
+            <div data-aos="fade-up">
               <div className="card-body items-center gap-4 text-center backdrop-blur backdrop-filter">
-                <i className="bi bi-search text-4xl"></i>
-                <h2 className="card-title">SEO Services</h2>
-                <p>
-                  This is a wider card with <br className="hidden xl:inline" />
-                  supporting text below as a <br className="hidden xl:inline" />{" "}
-                  natural content.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="card transform-gpu bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
-              data-aos="fade-up"
-            >
-              <div className="card-body items-center gap-4 text-center">
-                <i className="bi bi-chat-left-dots text-4xl"></i>
-                <h2 className="card-title">Social Content</h2>
-                <p>
-                  This is a wider card with <br className="hidden xl:inline" />
-                  supporting text below as a <br className="hidden xl:inline" />{" "}
-                  natural content.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="card transform-gpu bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
-              data-aos="fade-up"
-            >
-              <div className="card-body items-center gap-4 text-center">
-                <i className="bi bi-badge-ad text-4xl"></i>
-                <h2 className="card-title">Creative ads</h2>
-                <p>
-                  This is a wider card with <br className="hidden xl:inline" />
-                  supporting text below as a <br className="hidden xl:inline" />{" "}
-                  natural content.
-                </p>
+                <div
+                  className="elfsight-app-15fe3b1c-1ff1-4df6-875f-ae39e00c5ca6"
+                  data-elfsight-app-lazy
+                ></div>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function AboutUs() {
     AOS.init({ duration: 1000, once: true });
   }, []);
   return (
-    <div className="container py-10">
+    <div className="container py-10" id="about">
       <div className="text-center">
         <h2 className="mb-4 text-3xl font-bold sm:text-5xl md:mb-14">
           About Us
