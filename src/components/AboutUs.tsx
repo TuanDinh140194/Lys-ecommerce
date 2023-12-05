@@ -20,17 +20,17 @@ export default function AboutUs() {
 
       <div className="hero min-h-screen rounded-3xl bg-base-200 shadow-xl transition-opacity duration-300 ease-in-out">
         <div className="hero-content flex-col p-10 lg:flex-row-reverse">
-          <div className="relative w-[150%]">
+          <div className="relative lg:w-[150%] w-[100%] mb-20 pb-20 -mt-20 lg:mt-0 lg:mb-0">
             <img
               src={BackDrop.src}
-              className="z-10 w-[100%] max-w-lg"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[70%] lg:w-[100%] max-w-lg"
               alt="BackDrop"
             />
             <img
               src={Logo.src}
-              className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute w-1/4 lg:w-1/3 z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               alt="TextDrop"
-              style={{ width: "35%", height: "auto" }}
+              
             />
           </div>
           <div>

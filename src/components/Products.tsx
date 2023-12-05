@@ -11,6 +11,34 @@ import { useEffect } from "react";
 export default function Benefit() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+
+    const setAOSBasedOnScreenSize = () => {
+      const contentDiv = document.getElementById("content1");
+      const contentDiv2 = document.getElementById("content2");
+      const contentDiv3 = document.getElementById("content3");
+      const contentDiv4 = document.getElementById("content4");
+
+      if (contentDiv && contentDiv2 && contentDiv3 && contentDiv4) {
+        if (window.innerWidth > 767) {
+          // Adjust the mobile breakpoint as needed
+          contentDiv.setAttribute("data-aos", "fade-right");
+          contentDiv2.setAttribute("data-aos", "fade-left");
+          contentDiv3.setAttribute("data-aos", "fade-right");
+          contentDiv4.setAttribute("data-aos", "fade-left");
+        }
+      }
+    };
+
+    // Run the function when the component is mounted
+    setAOSBasedOnScreenSize();
+
+    // Attach resize listener to update on window resize
+    window.addEventListener("resize", setAOSBasedOnScreenSize);
+
+    // Cleanup function to remove the resize listener when component unmounts
+    return () => {
+      window.removeEventListener("resize", setAOSBasedOnScreenSize);
+    };
   }, []);
   return (
     <section className="py-10 md:py-20" id="products">
@@ -33,7 +61,7 @@ export default function Benefit() {
         ></div>
 
         <div className="card rounded-box grid h-[700px] flex-grow place-items-center bg-base-100 ">
-          <div className="-mt-10 text-center" data-aos="fade-right">
+          <div className="-mt-10 text-center" data-aos="fade-up" id="content1">
             <h1 className="mb-5 text-xl font-bold">
               Vital Cell Softgels Premium Extract For Women
             </h1>
@@ -74,7 +102,7 @@ export default function Benefit() {
         </div>
       </div>
 
-      <div className="hidden w-full grid-cols-1 gap-6 xl:py-10 lg:gap-8 xl:grid xl:gap-10">
+      <div className="hidden w-full grid-cols-1 gap-6 lg:gap-8 xl:grid xl:gap-10 xl:py-10">
         <div
           className="card grid h-[600px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
@@ -86,9 +114,9 @@ export default function Benefit() {
         ></div>
       </div>
 
-      <div className="-mt-10 md:mt-5 mb-10 grid w-full grid-cols-1 gap-6 pb-10 md:grid-cols-2 lg:gap-8 xl:gap-10">
+      <div className="-mt-10 mb-10 grid w-full grid-cols-1 gap-6 pb-10 md:mt-5 md:grid-cols-2 lg:gap-8 xl:gap-10">
         <div className="card rounded-box mb-5 grid h-[700px] flex-grow place-items-center bg-base-100">
-          <div className="text-center" data-aos="fade-left">
+          <div className="text-center" data-aos="fade-up" id="content2">
             <h1 className="mb-5 text-xl font-bold">Ingredients And Benefits</h1>
 
             <p className="hidden lg:block">
@@ -157,7 +185,7 @@ export default function Benefit() {
           }}
         ></div>
         <div className="-pt-10 card rounded-box grid h-[600px] flex-grow place-items-center bg-base-100 ">
-          <div className="text-center" data-aos="fade-right">
+          <div className="text-center" data-aos="fade-up" id="content3">
             <h1 className="mb-5 text-xl font-bold">
               Vital Cell Softgels Marine Premium For Men
             </h1>
@@ -198,7 +226,7 @@ export default function Benefit() {
         </div>
       </div>
 
-      <div className=" hidden w-full grid-cols-1 gap-6 xl:py-10 lg:gap-8 xl:grid xl:gap-10">
+      <div className=" hidden w-full grid-cols-1 gap-6 lg:gap-8 xl:grid xl:gap-10 xl:py-10">
         <div
           className="card grid h-[600px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
@@ -210,9 +238,9 @@ export default function Benefit() {
         ></div>
       </div>
 
-      <div className="md:mt-5 grid w-full grid-cols-1 gap-6 pb-10 md:grid-cols-2 lg:gap-8 xl:gap-10">
+      <div className="grid w-full grid-cols-1 gap-6 pb-10 md:mt-5 md:grid-cols-2 lg:gap-8 xl:gap-10">
         <div className="card rounded-box mb-5 grid h-[700px] flex-grow place-items-center bg-base-100">
-          <div className="text-center" data-aos="fade-left">
+          <div className="text-center" data-aos="fade-up" id="content4">
             <h1 className="mb-5 text-xl font-bold">Ingredients And Benefits</h1>
 
             <p className="hidden lg:block">

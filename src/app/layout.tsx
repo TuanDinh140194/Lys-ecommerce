@@ -8,6 +8,7 @@ import IntroForHome from "@/app/IntroForHome";
 import Canvas from "@/components/Canvas";
 import "@stripe/stripe-js";
 import { BrowserRouter } from "react-router-dom";
+import FacebookMsg from "@/components/FacebookMsg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function RootLayout({
             <Canvas />
           </div>
           <Footer />
+          <FacebookMsg/>
         </SessionProvider>
       </body>
     </html>
