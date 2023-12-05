@@ -15,7 +15,7 @@ export default function Introduction() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://static.elfsight.com/platform/platform.js";
-    script.setAttribute("data-use-service-core", true);
+    script.setAttribute("data-use-service-core", "true");
     script.defer = true;
 
     document.body.appendChild(script);
