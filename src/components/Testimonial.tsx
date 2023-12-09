@@ -1,12 +1,19 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import avarta1 from "@/app/assets/avarta/1.png";
 import avarta2 from "@/app/assets/avarta/2.png";
 import avarta3 from "@/app/assets/avarta/3.png";
 import avarta4 from "@/app/assets/avarta/4.png";
 import avarta5 from "@/app/assets/avarta/5.png";
 import avarta6 from "@/app/assets/avarta/6.png";
+import AOS from "aos";
 
 export default function Testimonial() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+
   return (
     <section className="bg-base py-10 md:py-16" id="testimonials">
       <div className="container">
@@ -20,7 +27,7 @@ export default function Testimonial() {
         </div>
 
         <div className="columns-1 gap-6 sm:columns-2 lg:columns-3 lg:gap-8">
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-base-200 text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">
@@ -54,7 +61,7 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-base-200 text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">
@@ -86,7 +93,7 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-[#DDBEAA] text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">
@@ -120,7 +127,7 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-[#DDBEAA] text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">
@@ -153,7 +160,7 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-[#E4dcc0] text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">
@@ -185,7 +192,7 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="mb-8 block lg:mb-10">
+          <div className="mb-8 block lg:mb-10" data-aos="fade-up">
             <div className="stack">
               <div className="card bg-[#E4dcc0] text-secondary-content hover:shadow-2xl">
                 <div className="card-body gap-4">

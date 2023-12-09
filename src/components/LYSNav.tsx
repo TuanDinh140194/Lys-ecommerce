@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const THEMES = [
   "light",
@@ -34,7 +35,7 @@ const THEMES = [
   "winter",
 ];
 
-export default function Intro() {
+export default function LYSNav() {
   // const [theme, setTheme] = React.useState("light");
 
   // React.useEffect(() => {
@@ -45,7 +46,7 @@ export default function Intro() {
   //   const val = e.target.getAttribute("data-set-theme");
   //   setTheme(val);
   // };
-
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   // Function to handle the scroll event
@@ -100,18 +101,24 @@ export default function Intro() {
               className="menu-compact menu dropdown-content rounded-box mt-1 w-52 bg-base-200 p-2 shadow"
             >
               <li>
-                <a href="/">Home</a>
+                <a href="#products">Products</a>
               </li>
               <li>
-                <a href="#bhMed">About BhMed</a>
+                <a href="#news">News</a>
               </li>
               <li>
-                <a href="#products">Ingredients</a>
+                <a href="#missions">Our Mission</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-sm normal-case xl:text-2xl" href="#">
-            Extract Vital Softgel
+          <a className="btn btn-ghost lg:btn-info text-sm normal-case xl:text-2xl lg:m-2" href="#">
+            LYS By B2Green
           </a>
           <div className="hidden lg:flex"></div>
         </div>
@@ -120,26 +127,37 @@ export default function Intro() {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal p-0 text-lg font-medium">
               <li>
-                <a href="/">Home</a>
+                <a href="#products">Products</a>
               </li>
               <li>
-                <a href="#bhMed">About BhMed</a>
+                <a href="#news">News</a>
               </li>
               <li>
-                <a href="#products">Ingredients</a>
+                <a href="#missions">Our Mission</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-end">
           <div className="mr-2 text-end">
-            <p className="text-sm font-semibold">Buy now only $59.99</p>
+            <p className="text-sm font-semibold">Cozy up your holiday</p>
             <p className="text-xs font-semibold text-amber-700">
               Enjoy our saving this winter*
             </p>
           </div>
           <div>
-            <button className="btn btn-info mr-5 text-base-100">Buy Now</button>
+            <button
+              onClick={() => router.push("/shop")}
+              className="btn btn-info mr-5 text-base-100"
+            >
+              Shop All
+            </button>
           </div>
           {/* <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-primary">

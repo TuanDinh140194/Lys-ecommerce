@@ -169,7 +169,7 @@ export default function Hero() {
 
             <button
               onClick={() => router.push("/shop")}
-              className="group btn-info relative inline-flex items-center justify-center overflow-hidden rounded-lg px-7 py-2.5 text-white focus:ring-4 focus:ring-blue-300"
+              className="group btn-info relative inline-flex items-center justify-center overflow-hidden rounded-lg px-7 py-2.5 text-white focus:ring-4 focus:ring-[#f0da8a]"
             >
               <span className="z-40">Learn More</span>
               <svg

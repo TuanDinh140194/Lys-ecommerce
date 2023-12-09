@@ -118,7 +118,7 @@ export default function Introduction() {
               <div className="card-body z-10 items-center">
                 <div className="items-center gap-4 rounded-3xl bg-[white]/30 p-4 text-center brightness-110 backdrop-blur backdrop-filter">
                   <i className="bi bi-search text-4xl"></i>
-                  <h1 className="font-extrabold ">What We Wish </h1>
+                  <h1 className="font-extrabold ">What We Hope </h1>
                   <p>
                     Health and beauty products from renowned global brands.{" "}
                     <br className="hidden xl:inline" />

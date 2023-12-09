@@ -6,19 +6,13 @@ import Benefit from "@/components/Products";
 import Testimonial from "@/components/Testimonial";
 import AboutUs from "@/components/AboutUs";
 import LYSIntro from "@/components/LYSIntro";
-import LYSProducts from "@/components/LYSProducts";
-
 
 export default function Landing() {
   return (
     <div className="max-w-7xl">
-      
-      <LYSIntro/>
-      <LYSProducts/>
-      <Ingredient />
-      <AboutUs/>
-      <Testimonial />
-      
+      <HeroIntro />
+      <Event />
+      <Benefit />
     </div>
   );
 }

@@ -44,7 +44,8 @@ export default function RootLayout({
             <Canvas />
           </div>
           <Footer />
-          <FacebookMsg/>
+
+          <FacebookMsg />
         </SessionProvider>
       </body>
     </html>

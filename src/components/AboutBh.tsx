@@ -10,7 +10,7 @@ export default function Product() {
     AOS.init({ duration: 1000, once: true });
   }, []);
   return (
-    <div className="container py-10">
+    <div className="container py-10" id="bhMed">
       <div className="text-center">
         <p className="sm:text-2x mb-6 text-lg">About Bhmed</p>
         <h2 className="mb-4 text-3xl font-bold sm:text-5xl md:mb-14">
