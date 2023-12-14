@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import Lottie from "lottie-react";
 import animationData from "@/app/assets/background/Animation - 1701930253712.json";
 import PremiumExtract from "@/app/assets/pic1.png";
 import MarinePremium from "@/app/assets/marine1.png";

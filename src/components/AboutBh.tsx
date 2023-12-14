@@ -1,5 +1,6 @@
 "use client";
 
+//import { Link } from "react-router-dom"; // Import Link from react-router-dom if you're using React Router
 import SwissMountain from "@/app/assets/swiss-mt.png";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -27,7 +28,7 @@ export default function Product() {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md" data-aos="fade-up">
-            <h1 className="mb-5 text-5xl font-bold" >Our Story</h1>
+            <h1 className="mb-5 text-5xl font-bold">Our Story</h1>
             <p className="mb-5">
               From the Alps mountain range in Switzerland, L.B.A (Laboratoire de
               Biogénèse Appliquée) was established in 1981, becoming the oldest
@@ -37,7 +38,13 @@ export default function Product() {
               high-quality products based on biological cell therapy –
               Organotherapy
             </p>
-            <button className="btn btn-info">Read More</button>
+            <a
+              href="https://bhmed.com/about/"
+              target="_blank"
+              className="btn btn-info"
+            >
+              Visit Page
+            </a>
           </div>
         </div>
       </div>

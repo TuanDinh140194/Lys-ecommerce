@@ -21,7 +21,7 @@ const PremiumInfo = [
     height: 800,
     title: "Premium Extract Vital Softgel",
     desciption:
-      "Vital Cell Softgels [Premium Extracts] include a handful of natural ingredients clinically proven to reduce wrinkles, brown spots, dullness and other signs of aging. And researchers aren’t the only ones paying attention to the softgels.",
+      "Vital Cell Softgels [Premium Extracts] include a handful of natural ingredients clinically proven to reduce wrinkles, brown spots, dullness and other signs of aging.",
   },
   {
     src: Pic1,

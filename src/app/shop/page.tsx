@@ -10,7 +10,7 @@ interface HomeProps {
 }
 
 export const metadata: Metadata = {
-  title: "LYS - Shop",
+  title: "LYS - Shop All",
   description: "We make you love yourself",
 };
 
@@ -41,17 +41,18 @@ export default async function Home({
             <Image
               src={products[0].imageUrl}
               alt={products[0].name}
-              width={400}
-              height={800}
-              className="w-full max-w-sm rounded-lg shadow-2xl"
+              width={1000}
+              height={1000}
+              className="w-full max-w-sm h-[500px] rounded-lg shadow-2xl"
               priority
             />
 
             <div>
+              <h1 className="text-xl p-4 badge badge-secondary">New Product</h1>
               <h1 className="text-5xl font-bold">{products[0].name}</h1>
               <p className="py-6">{products[0].description}</p>
               <Link
-                className="btn btn-primary"
+                className="btn btn-info"
                 href={"/products/" + products[0].id}
               >
                 Check it out

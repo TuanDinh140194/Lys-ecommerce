@@ -32,6 +32,7 @@ const LYSProducts = () => {
                 backgroundRepeat: "no-repeat", // Set the background repeat property
                 backgroundPosition: "center", // Center the background image
               }}
+              onClick={() => router.push("/b2green")}
             >
               <div className=" card-body z-10">
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform items-center gap-4 rounded-3xl bg-[white]/20 p-4 text-center brightness-110 backdrop-blur backdrop-filter">

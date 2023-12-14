@@ -10,6 +10,17 @@ interface ProductCardProps {
 const ProductCard = ({ product }: ProductCardProps) => {
   const isNew =
     Date.now() - new Date(product.createAt).getTime() < 1000 * 60 * 60 * 24 * 7;
+
+    const descriptionStyle: React.CSSProperties = {
+      maxHeight: "7.2em", // 7 lines assuming a line height of 1.2em
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      display: "-webkit-box",
+      WebkitBoxOrient: "vertical",
+      wordWrap: "break-word",
+      lineHeight: "1.2em",
+    };
+
   return (
     <Link
       href={"/products/" + product.id}
@@ -27,7 +38,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <div className="card-body">
         <h2 className="card-title">{product.name}</h2>
         {isNew && <div className="badge badge-secondary">NEW</div>}
-        <p>{product.description}</p>
+        <p style={descriptionStyle}>{product.description}</p>
         <PriceTag price={product.price} />
       </div>
     </Link>
