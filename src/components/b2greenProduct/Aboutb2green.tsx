@@ -15,7 +15,7 @@ export default function AboutB2G() {
   return (
     <div className=" container py-10" id="b2green">
       <div className="text-center">
-        <p className="sm:text-2x mb-6 text-lg">About B2Green</p>
+        <p className="sm:text-2x mb-6 text-lg">About B2Greene</p>
         <h2 className="mb-4 text-3xl font-bold sm:text-5xl md:mb-14">
           Healthy living to everyone.
         </h2>

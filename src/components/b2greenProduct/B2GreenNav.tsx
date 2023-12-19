@@ -104,7 +104,7 @@ export default function B2GreenNav() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#b2green">About B2Green</a>
+                <a href="#b2green">About B2Greene</a>
               </li>
               <li>
                 <a href="#ingredient">Ingredients</a>
@@ -127,7 +127,7 @@ export default function B2GreenNav() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#b2green">About B2Green</a>
+                <a href="#b2green">About B2Greene</a>
               </li>
               <li>
                 <a href="#ingredient">Ingredients</a>
