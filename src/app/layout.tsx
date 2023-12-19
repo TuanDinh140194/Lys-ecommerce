@@ -13,9 +13,11 @@ import FacebookMsg from "@/components/FacebookMsg";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LYS - Home",
-  description: "We make you love yourself",
-};
+  title: "LYS By B2Greene - Health and beauty products",
+  description:
+    "LYS was born in 2023 with the aim of providing premium health and beauty products. With the increasing demand for protection, improving health, and the growing desire for beauty in today's modern society, LYS emerged to offer products that can meet these needs and bring additional value to the community.",
+  keywords: ['Health', 'Essential Oil', 'Vital Softgel', 'Beauty Products'],
+  };
 
 export default function RootLayout({
   children,
