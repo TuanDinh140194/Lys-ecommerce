@@ -66,9 +66,9 @@ const Acupuncture = () => {
 
       <div className="py-10 text-center">
         <h2 className="pb-10 text-3xl font-bold">Warning </h2>
-        
-          <div className="grid grid-cols-1 md:grid-cols-2 md:flex md:justify-center">
-            <div className="flex justify-center p-4">
+
+        <div className="grid grid-cols-1 md:flex md:grid-cols-2 md:justify-center">
+          <div className="flex justify-center p-4">
             <Image
               src={warning.src}
               alt="P1"
@@ -76,21 +76,20 @@ const Acupuncture = () => {
               height={100}
               className="md:max-w-full"
             />
-            </div>
-            <div className="font-semibold md:text-left">
-              <p>- Do not drink; For adults only;</p>
-              <p>- Store in dry and cool place;</p>
-              <p>- Avoid contacting with eyes; Keep out of reach of children</p>
-              <p>
-                - Do not use for people who are allergic to any of the
-                ingredients in the product
-              </p>
-              <p>
-                - Consult a doctor when using for pregnant and lactating women
-              </p>
-            </div>
           </div>
-
+          <div className="font-semibold md:text-left">
+            <p>- Do not drink; For adults and children over 2 years old;</p>
+            <p>- Store in dry and cool place;</p>
+            <p>- Avoid contacting with eyes; Keep out of reach of children</p>
+            <p>
+              - Do not use for people who are allergic to any of the ingredients
+              in the product
+            </p>
+            <p>
+              - Consult a doctor when using for pregnant and lactating women
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

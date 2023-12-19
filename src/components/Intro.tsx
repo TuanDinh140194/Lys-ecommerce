@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const THEMES = [
   "light",
@@ -133,13 +134,20 @@ export default function Intro() {
         </div>
         <div className="navbar-end">
           <div className="mr-2 text-end">
-            <p className="text-sm font-semibold">Buy now only $59.99</p>
+            <p className="text-sm font-semibold">Buy Vital Softgel for only $280.00</p>
             <p className="text-xs font-semibold text-amber-700">
               Enjoy our saving this winter*
             </p>
           </div>
           <div>
-            <button className="btn btn-info mr-5 text-base-100">Buy Now</button>
+            <Link
+              className="btn btn-info mr-5 text-base-100"
+              href={"/shopBhMed"}
+            >
+              Shop Now
+              
+            </Link>
+            
           </div>
           {/* <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-primary">

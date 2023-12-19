@@ -162,7 +162,7 @@ export default function B2Greene() {
             </p>
 
             <button
-              onClick={() => router.push("/shop")}
+              onClick={() => router.push("/shopB2Greene")}
               className="group btn-info relative inline-flex items-center justify-center overflow-hidden rounded-lg px-7 py-2.5 text-white focus:ring-4 focus:ring-[#f0da8a]"
             >
               <span className="z-40">Learn More</span>

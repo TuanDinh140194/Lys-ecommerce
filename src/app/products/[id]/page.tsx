@@ -50,7 +50,7 @@ export default async function ProductPage({
 
       <div>
         <h1 className="text-5xl font-bold">{product.name}</h1>
-        <PriceTag price={product.price} className="mt-4" />
+        <PriceTag price={product.price} className="mt-4 badge-secondary" />
         <p className="py-6">{product.description}</p>
         <AddToCartButton productId={product.id} incrementProductQuantity={incrementProductQuantity}/>
       </div>

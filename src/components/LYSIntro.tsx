@@ -21,7 +21,7 @@ const LYSIntro = () => {
           <div className="absolute inset-0 z-10 mt-5 text-center md:mt-0">
             <h2 className="my-5 text-3xl font-bold sm:text-5xl">LYS, </h2>
             <h2 className="mb-4 text-3xl font-bold sm:text-5xl">
-              Love YourSelf.{" "}
+              By B2Greene.{" "}
             </h2>
             <p className="sm:text-md mb-6 text-sm">
               Give a little health magic.

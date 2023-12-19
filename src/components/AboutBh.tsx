@@ -1,10 +1,10 @@
 "use client";
 
-//import { Link } from "react-router-dom"; // Import Link from react-router-dom if you're using React Router
+
 import SwissMountain from "@/app/assets/swiss-mt.png";
 import { useEffect } from "react";
 import AOS from "aos";
-//import "aos/dist/aos.css";
+
 
 export default function Product() {
   useEffect(() => {

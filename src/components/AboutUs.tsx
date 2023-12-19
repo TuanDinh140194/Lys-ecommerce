@@ -1,7 +1,7 @@
 "use client";
 
 import BackDrop from "@/app/assets/backdrop.png";
-import Logo from "@/app/assets/logo2.png";
+import Logo from "@/app/assets/LYSByB2Greene3.png";
 import { useEffect } from "react";
 import AOS from "aos";
 //import "aos/dist/aos.css";

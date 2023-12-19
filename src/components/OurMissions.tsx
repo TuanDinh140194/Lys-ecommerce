@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import LYS from "@/app/assets/LoveYourSelf.jpg";
 import healthy from "@/app/assets/healthy.jpg";
 import community from "@/app/assets/community.jpg";
-import LYSLogo from "@/app/assets/logo2.png";
+import LYSLogo from "@/app/assets/LYSByB2Greene3.png";
 import AOS from "aos";
 
 export default function Introduction() {
@@ -89,14 +89,13 @@ export default function Introduction() {
               <div className="card-body z-10 items-center ">
                 <div className=" items-center gap-4 rounded-3xl bg-[white]/30 p-4 text-center brightness-110 backdrop-blur backdrop-filter">
                   <i className="bi bi-search text-4xl"></i>
-                  <h1 className="font-extrabold">LYS - LOVE YOURSELF </h1>
+                  <h1 className="font-extrabold">LYS - By B2Greene </h1>
                   <p>
-                    With the slogan LYS - LOVE YOURSELF{" "}
-                    <br className="hidden xl:inline" />
-                    We emphasize the importance of everyone loving and caring
+                    With the slogan "Healthy and Beauty is the final Wealthy",
+                    we emphasize the importance of everyone loving and caring
                     for their health and beauty even more, regardless of gender,
                     origin, or profession. With health and beauty, you have it
-                    all. <br className="hidden xl:inline" />
+                    all. all. <br className="hidden xl:inline" />
                   </p>
                 </div>
               </div>
@@ -170,10 +169,10 @@ export default function Introduction() {
               <div className="card-body z-10 items-center">
                 <div className="items-center gap-4 rounded-3xl bg-[white]/40 p-4 text-center backdrop-blur backdrop-filter">
                   <i className="bi bi-search text-4xl"></i>
-                  <h1 className="font-extrabold">Born Of LYS</h1>
+                  <h1 className="font-extrabold">Born Of LYS - by B2Greene</h1>
                   <p>
-                    That's why We Create LYS <br className="hidden xl:inline" />
-                    Wish all the best things to customers{" "}
+                    That's why We Create LYS - by B2Greene <br className="hidden xl:inline" />
+                    Wish all the best things to our beloved customers{" "}
                     <br className="hidden xl:inline" />
                   </p>
                 </div>

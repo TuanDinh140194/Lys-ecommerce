@@ -66,7 +66,7 @@ export default function CheckOutButton({ isDisabled }: CheckOutButtonProps) {
     <div className="flex">
       <button
         onClick={onCheckOut}
-        className={`btn btn-primary sm:w-[200px]`}
+        className={`btn btn-info sm:w-[200px]`}
         disabled={disabled}
       >
         {loading ? "Loading..." : "Check Out"}

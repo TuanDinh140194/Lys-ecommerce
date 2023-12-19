@@ -39,7 +39,7 @@ const LYSProducts = () => {
                   <i className="bi bi-search text-4xl"></i>
 
                   <h1 className="font-extrabold">
-                    Medical Essential Oil - By B2Green{" "}
+                    Medical Essential Oil - By B2Greene{" "}
                   </h1>
                 </div>
               </div>

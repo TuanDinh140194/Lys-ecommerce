@@ -118,7 +118,7 @@ export default function LYSNav() {
             </ul>
           </div>
           <a className="btn btn-ghost lg:btn-info text-sm normal-case xl:text-2xl lg:m-2" href="#">
-            LYS By B2Green
+            LYS By B2Greene
           </a>
           <div className="hidden lg:flex"></div>
         </div>

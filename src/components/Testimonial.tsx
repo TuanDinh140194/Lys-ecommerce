@@ -13,7 +13,6 @@ export default function Testimonial() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-
   return (
     <section className="bg-base py-10 md:py-16" id="testimonials">
       <div className="container">
@@ -42,17 +41,17 @@ export default function Testimonial() {
                       <p className="text-lg font-medium leading-tight">
                         Mrs. Chan, 52
                       </p>
-                      <small>Mobile dev</small>
+                      <small>Portland Tailor</small>
                     </div>
                   </div>
                   <p>
                     I was plagued with the problem of dryness around my eye
                     areas. Due to the dryness, wrinkles were very prominent
                     around my eyes. I was looking for a solution when I
-                    discovered about NanoVital Cell Extracts. I had one
-                    treatment of NanoVital Cell Extracts (Mesenchyme) and the
-                    results were amazing. The wrinkles around my eyes were
-                    reduced significantly. Thank you, Bhmed
+                    discovered about Vital Cell Extracts. I had one treatment of
+                    Vital Cell Extracts (Mesenchyme) and the results were
+                    amazing. The wrinkles around my eyes were reduced
+                    significantly. Thank you, Bhmed
                   </p>
                 </div>
               </div>
@@ -82,8 +81,8 @@ export default function Testimonial() {
                   <p>
                     My nightmare started when I used a wrong skincare product.
                     Red, unsightly acnes broke out all over my face. I had five
-                    facial treatments NanoVital Cell Extracts (Skin) over a
-                    period of five weeks. I am truly amazed that my acnes are
+                    facial treatments Vital Cell Extracts (Skin) over a period
+                    of five weeks. I am truly amazed that my acnes are
                     completely gone! My self-confidence is back again!
                   </p>
                 </div>
@@ -112,13 +111,14 @@ export default function Testimonial() {
                     </div>
                   </div>
                   <p>
-                    The problem with my skin was that it lacked collagen and
-                    elasticity. Hence, absorption was not up to par resulting in
-                    rough and oily skin. Furthermore, I had poor memory. My
-                    friend recommended that I try Bhmed’s Vital Cell Softgels
-                    (Premium Extracts). After one softgel daily for six months,
-                    my skin feels tighter and smoother and is glowing. My memory
-                    has improved. Thank you, Bhmed, for these amazing results!”
+                    I've been using B2Greene's Medicated Essential Oil for a few
+                    weeks now, and I'm incredibly impressed with the results. As
+                    someone who suffers from occasional muscle discomfort and
+                    stress, this oil has been a game-changer for me. The blend
+                    of essential oils in this product, delivers a soothing and
+                    calming effect that I've found to be immensely helpful in
+                    easing tension in my muscles and promoting relaxation after
+                    a long day.
                   </p>
                 </div>
               </div>
@@ -142,16 +142,19 @@ export default function Testimonial() {
                       <p className="text-lg font-medium leading-tight">
                         Madam Tio, 48
                       </p>
-                      <small>Creator of Tailwind Awesome</small>
+                      <small>Hiring Manager</small>
                     </div>
                   </div>
                   <p>
-                    My nails used to chip easily and my nail plates were uneven.
-                    I was looking for a product which could strengthen my nails
-                    and I came across Vital Cell Softgels Premium Extract. After
-                    treatment of one softgel daily for four months, my nails are
-                    healthy and strengthened and my nail plates have evened out.
-                    I will certainly continue using this product.”
+                    What sets B2Greene's Medicated Essential Oil apart is its
+                    high-quality formulation and potency. Just a few drops go a
+                    long way, and I appreciate that it's made with natural
+                    ingredients, free from harsh chemicals or additives. I've
+                    used it by diluting it with a carrier oil for massages,
+                    adding it to my bath for a therapeutic soak, and even
+                    diffusing it in my home for a serene atmosphere. The
+                    pleasant aroma instantly creates a sense of tranquility,
+                    which has significantly improved my overall well-being.
                   </p>
                 </div>
               </div>
@@ -167,7 +170,7 @@ export default function Testimonial() {
                   <div className="flex items-center">
                     <div className="avatar flex-shrink-0">
                       <div className="w-16 rounded-full border-2 border-white">
-                        <img src={avarta5.src}/>
+                        <img src={avarta5.src} />
                       </div>
                     </div>
 
@@ -179,11 +182,11 @@ export default function Testimonial() {
                     </div>
                   </div>
                   <p>
-                    I had inflammation around my thumbnail, thus hampering the
-                    growth. I gave Vital Cell Softgels (Premium Extract) a try
-                    and I applied one softgel daily for three months. I saw the
-                    inflammation subsiding gradually and my nail growing
-                    healthily. Thank you, Bhmed!”
+                    LYS has completely changed the way I shop online. As someone
+                    who values convenience, quality, and a seamless shopping
+                    experience, I've found LYS to be an absolute game-changer.
+                    This platform has redefined my expectations when it comes to
+                    online shopping for a variety of products.
                   </p>
                 </div>
               </div>
@@ -211,9 +214,12 @@ export default function Testimonial() {
                     </div>
                   </div>
                   <p>
-                    “I was plagued with oily and rough skin. However, after
-                    using Vital Cell Softgel daily for three months, my skin is
-                    smoother, firmer, and more radiant. Thanks Bhmed!”
+                    What struck me most about LYS is its user-friendly
+                    interface. Navigating through the website is a breeze,
+                    thanks to its intuitive design and easy-to-use features.
+                    Whether I'm browsing for my shopping items, the
+                    categorization and search options make finding what I need
+                    effortless.
                   </p>
                 </div>
               </div>

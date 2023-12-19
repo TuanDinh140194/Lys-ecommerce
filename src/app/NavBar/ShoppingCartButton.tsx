@@ -51,7 +51,7 @@ export async function ShoppingCartButton({ cart }: ShoppingCartButtonProp) {
           <div className="card-actions">
             <Link
               href="/cart"
-              className="btn btn-primary btn-block z-30"
+              className="btn btn-info btn-block z-30"
               onClick={closeDropdown}
             >
               View Cart

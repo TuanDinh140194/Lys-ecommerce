@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/NewLogo.png";
-import logoBackdrop from "@/app/assets/Logobackdrop.png";
+import logo from "@/app/assets/LogoLYSByB2Greene.png";
 import { redirect } from "next/navigation";
 import { getCart } from "../lib/db/cart";
 import { ShoppingCartButton } from "./ShoppingCartButton";

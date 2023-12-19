@@ -21,7 +21,7 @@ const PremiumInfo = [
     height: 800,
     title: "Premium Extract Vital Softgel",
     desciption:
-      "Vital Cell Softgels [Premium Extracts] include a handful of natural ingredients clinically proven to reduce wrinkles, brown spots, dullness and other signs of aging.",
+      "Woman's Companion.",
   },
   {
     src: Pic1,
@@ -42,7 +42,7 @@ const MarineInfo = [
     height: 800,
     title: "Marine Extract Vital Softgel",
     desciption:
-      "We look for the best, scientifically proven, active ingredients before incorporating them in our formulas",
+      "Gentlemen's treasure.",
   },
   {
     src: marineImg2,
@@ -168,7 +168,7 @@ export default function Hero() {
             <p className="py-6" data-aos="fade-up">{currentImage.desciption}</p>
 
             <button
-              onClick={() => router.push("/shop")}
+              onClick={() => router.push("/shopBhMed")}
               className="group btn-info relative inline-flex items-center justify-center overflow-hidden rounded-lg px-7 py-2.5 text-white focus:ring-4 focus:ring-[#f0da8a]"
             >
               <span className="z-40">Learn More</span>

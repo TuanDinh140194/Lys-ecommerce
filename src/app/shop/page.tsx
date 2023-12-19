@@ -34,9 +34,11 @@ export default async function Home({
   });
 
   return (
+    
     <div className="flex flex-col items-center py-12">
+      <h1 className="text-4xl font-bold my-10">All Products From LYS</h1>
       {currentPage === 1 && (
-        <div className="hero rounded-xl bg-base-200">
+        <div className="hero rounded-xl bg-base-200 hover:shadow-xl">
           <div className="hero-content flex-col lg:flex-row">
             <Image
               src={products[0].imageUrl}

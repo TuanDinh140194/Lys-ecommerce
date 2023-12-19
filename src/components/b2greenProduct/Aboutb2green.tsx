@@ -32,14 +32,15 @@ export default function AboutB2G() {
           <div className="max-w-md" data-aos="fade-up">
             <h1 className="mb-5 text-5xl font-bold">Our Story</h1>
             <p className="mb-5">
-              B2Greene is a brand established in the US with the desire to be a
-              plat- form to spread product values imbued with Vietnamese
-              identity to inter- national friends. From our own name - B2Greene
-              - Be to Green - We want to spread the value of green living -
-              healthy living to everyone; contributing to creating a green and
-              healthy community. Therefore, the products that B2greene aims for
-              must achieve the values of friendliness, quality, efficiency and
-              safety.
+              B2Greene is a brand established in the US with the desire to
+              become a brand that spreads product values imbued with Vietnamese
+              identity to international friends, as well as bringing more clean,
+              green health products from everywhere in the world. From our name
+              - B2Greene - Be to Green - We want to spread the value of green
+              living - healthy living to everyone, contributing to creating a
+              green and healthy community. Therefore, the products that B2greene
+              aims for must achieve the values of friendliness, quality,
+              efficiency, and safety.
             </p>
             <button className="btn btn-info">Visit Page</button>
           </div>
