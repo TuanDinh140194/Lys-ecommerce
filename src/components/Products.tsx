@@ -1,6 +1,7 @@
 "use client";
 
-import PremiumBe from "@/app/assets/productImage/PremiumBe.png";
+import PremiumExtract from "@/app/assets/bhMedProducts/PremiumExtract.jpeg";
+import PremiumExtract2 from "@/app/assets/bhMedProducts/PremiumExtract2.png";
 import marinePremium from "@/app/assets/productImage/marinePremium.png";
 import IngredientPic from "@/app/assets/productImage/ingredientPic.png";
 import MPIngredient from "@/app/assets/productImage/MP_Ingredient.png";
@@ -53,8 +54,8 @@ export default function Benefit() {
         <div
           className="card grid h-[700px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
-            backgroundImage: `url(${PremiumBe.src})`, // Use backgroundImage to set the image
-            backgroundSize: "cover", // Set the desired background size
+            backgroundImage: `url(${PremiumExtract.src})`, // Use backgroundImage to set the image
+            backgroundSize: "100% 100%", // Set the desired background size
             backgroundRepeat: "no-repeat", // Set the background repeat property
             backgroundPosition: "center", // Center the background image
           }}
@@ -167,9 +168,10 @@ export default function Benefit() {
         <div
           className="card grid h-[700px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
-            background:
-              'url("https://images.unsplash.com/photo-1596337635980-8d2243ea07fb?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHNleHklMjBnaXJsfGVufDB8fDB8fHww")',
-            backgroundSize: "fit",
+            backgroundImage: `url(${PremiumExtract2.src})`, // Use backgroundImage to set the image
+            backgroundSize: "cover", // Set the desired background size
+            backgroundRepeat: "no-repeat", // Set the background repeat property
+            backgroundPosition: "center", // Center the background image
           }}
         ></div>
       </div>
