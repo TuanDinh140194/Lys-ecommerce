@@ -35,7 +35,7 @@ export default function AboutUs() {
           </div>
           <div>
             <h1 className="pb-10 text-5xl font-bold" >
-              LYS - Love YourSelf
+              LYS - By B2Greene
             </h1>
             <p className="py-6" data-aos="fade-up">
               LYS was born in 2023 with the aim of providing premium health and
