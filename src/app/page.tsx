@@ -7,6 +7,7 @@ import Testimonial from "@/components/Testimonial";
 import AboutUs from "@/components/AboutUs";
 import LYSIntro from "@/components/LYSIntro";
 import LYSProducts from "@/components/LYSProducts";
+import LYSPromotion from "@/components/LYSPromotion";
 
 
 export default function Landing() {
@@ -14,6 +15,7 @@ export default function Landing() {
     <div className="max-w-7xl">
       
       <LYSIntro/>
+      <LYSPromotion/>
       <LYSProducts/>
       <Ingredient />
       <AboutUs/>

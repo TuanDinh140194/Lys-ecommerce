@@ -61,7 +61,7 @@ export default function Benefit() {
           }}
         ></div>
 
-        <div className="card rounded-box grid h-[700px] flex-grow place-items-center bg-base-100 ">
+        <div className="card rounded-box my-14 grid h-[700px] flex-grow place-items-center bg-base-100">
           <div className="-mt-10 text-center" data-aos="fade-up" id="content1">
             <h1 className="mb-5 text-xl font-bold">
               Vital Cell Softgels Premium Extract For Women
@@ -99,11 +99,20 @@ export default function Benefit() {
               Use for a minimum of 3 - 8 months for the best results and
               long-term maintenance.
             </p>
+            <div className="py-5">
+              <p className="font-bold">CAUTION:</p>
+              <p>
+                Not recommended for patients with inflammation, as Sheep
+                Placenta has a warming effect. Do not use it concurrently with
+                customers using Glutathione, as it may temporarily reduce the
+                skin whitening effect.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="hidden w-full grid-cols-1 gap-6 lg:gap-8 xl:grid xl:gap-10 xl:py-10">
+      <div className="hidden w-full grid-cols-1 gap-6 lg:gap-8 xl:grid xl:gap-10 xl:pb-5">
         <div
           className="card grid h-[600px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
@@ -176,7 +185,7 @@ export default function Benefit() {
         ></div>
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 xl:gap-10">
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8 xl:gap-10 mb-14">
         <div
           className="card grid h-[700px] flex-grow transform-gpu place-items-center rounded-3xl bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
           style={{
@@ -186,7 +195,7 @@ export default function Benefit() {
             backgroundPositionX: "center",
           }}
         ></div>
-        <div className="-pt-10 card rounded-box grid h-[600px] flex-grow place-items-center bg-base-100 ">
+        <div className="pt-10 card rounded-box grid h-[600px] flex-grow place-items-center bg-base-100 ">
           <div className="text-center" data-aos="fade-up" id="content3">
             <h1 className="mb-5 text-xl font-bold">
               Vital Cell Softgels Marine Premium For Men
@@ -224,6 +233,8 @@ export default function Benefit() {
               Use for a minimum of 3 - 8 months for the best results and
               long-term maintenance.
             </p>
+            <p className="mt-5 font-bold">Caution:</p>
+            <p>Not recommended for patients with seafood allergy.</p>
           </div>
         </div>
       </div>

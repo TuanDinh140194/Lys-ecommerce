@@ -21,7 +21,7 @@ const LYSProducts = () => {
           </p>
         </div>
 
-        <div className="scroll-smooth">
+        <div className="scroll-smooth" data-aos="fade-up">
           <div className="grid grid-cols-1 gap-6 py-10 md:grid-cols-2 lg:gap-8 xl:gap-10">
             <div
               className="card h-[500px] transform-gpu cursor-pointer bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -33,6 +33,7 @@ const LYSProducts = () => {
                 backgroundPosition: "center", // Center the background image
               }}
               onClick={() => router.push("/b2green")}
+              
             >
               <div className=" card-body z-10">
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform items-center gap-4 rounded-3xl bg-[white]/20 p-4 text-center brightness-110 backdrop-blur backdrop-filter">

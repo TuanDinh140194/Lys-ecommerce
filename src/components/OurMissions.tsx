@@ -68,7 +68,7 @@ export default function Introduction() {
         <div className="text-center">
           <h2 className="mb-4 text-3xl font-bold sm:text-5xl">What We Do</h2>
           <p className="mb-6 text-lg sm:text-2xl">
-            Personalized help for your health, safety, and productivity.
+            Personalized products for your health and beauty.
           </p>
         </div>
 
@@ -171,7 +171,8 @@ export default function Introduction() {
                   <i className="bi bi-search text-4xl"></i>
                   <h1 className="font-extrabold">Born Of LYS - by B2Greene</h1>
                   <p>
-                    That's why We Create LYS - by B2Greene <br className="hidden xl:inline" />
+                    That's why We Create LYS - by B2Greene{" "}
+                    <br className="hidden xl:inline" />
                     Wish all the best things to our beloved customers{" "}
                     <br className="hidden xl:inline" />
                   </p>

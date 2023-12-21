@@ -1,8 +1,8 @@
 "use client";
 
-import B2G from "@/app/assets/b2gProduct/B2Greene.png";
-import B2G2 from "@/app/assets/b2gProduct/B2Green4 (1).png";
-import B2G3 from "@/app/assets/b2gProduct/B2Green3 (1).png";
+import B2G from "@/app/assets/b2gProduct/B2Green3 (1).png";
+import B2G3 from "@/app/assets/b2gProduct/B2Green8.png";
+import B2G4 from "@/app/assets/b2gProduct/B2Green10.png";
 import B2GLogo from "@/app/assets/b2gProduct/B2GreenLogo.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -14,17 +14,17 @@ const b2gProduct = [
   {
     src: B2G,
     alt: "Picture1",
-    width: 1200,
-    height: 1200,
+    width: 500,
+    height: 500,
     title: "Medicated Essential Oil",
     desciption:
       "Le+Pure Essential Oil is a product produced from natural oils based on formulas studied by Dermatologists and Traditional Medicine.",
   },
   {
-    src: B2G2,
+    src: B2G4,
     alt: "Picture2",
-    width: 1200,
-    height: 1200,
+    width: 500,
+    height: 500,
     title: "Medicated Essential Oil",
     desciption:
       "Bringing many uses in supporting treatment process of Sinusitis, Rhinitis, Arthritis, Pains (Head, Shoulders, Nape, ...), relieves itching and swelling caused by insect bites.",
@@ -32,8 +32,8 @@ const b2gProduct = [
   {
     src: B2G3,
     alt: "Picture3",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     title: "Medicated Essential Oil",
     desciption:
       "Bringing many uses in supporting treatment process of Sinusitis, Rhinitis, Arthritis, Pains (Head, Shoulders, Nape, ...), relieves itching and swelling caused by insect bites.",
@@ -93,11 +93,11 @@ export default function B2Greene() {
     <div>
       <div className="min-h-64 group hero my-20 h-[700px] rounded-3xl bg-base-200 bg-opacity-80 shadow-xl transition-opacity duration-300 ease-in-out">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="relative max-w-sm lg:w-2/3 lg:max-w-none ">
+          <div className="relative max-w-sm w-[70%] lg:w-2/3 lg:max-w-none ">
             <Image
               src={currentImage.src}
               alt={currentImage.alt}
-              className=" transform rounded-lg "
+              className=" transform rounded-lg pb-2 lg:h-[500px] lg:ml-48"
               width={currentImage.width}
               height={currentImage.height}
             />
