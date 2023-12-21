@@ -95,7 +95,7 @@ export default function Introduction() {
                     we emphasize the importance of everyone loving and caring
                     for their health and beauty even more, regardless of gender,
                     origin, or profession. With health and beauty, you have it
-                    all. all. <br className="hidden xl:inline" />
+                    all. <br className="hidden xl:inline" />
                   </p>
                 </div>
               </div>
