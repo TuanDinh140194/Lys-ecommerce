@@ -21,7 +21,7 @@ export default function AboutUs() {
       <div className="hero min-h-screen rounded-3xl bg-base-200 shadow-xl transition-opacity duration-300 ease-in-out">
         <div className="hero-content flex-col p-10 lg:flex-row-reverse">
           <div
-            className="relative -mt-20 mb-20 w-[100%] pb-20 lg:mb-0 lg:mt-0 lg:w-[150%]"
+            className="relative mb-20 w-[100%] pb-20 lg:mb-0 lg:mt-0 lg:w-[150%]"
             data-aos="fade-up"
           >
             <img
