@@ -23,7 +23,7 @@ const LYSProducts = () => {
 
         <div className="scroll-smooth" data-aos="fade-up">
           <div className="grid grid-cols-1 gap-6 py-10 md:grid-cols-2 lg:gap-8 xl:gap-10">
-            <div
+            <button
               className="card h-[500px] transform-gpu cursor-pointer bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
               //data-aos="fade-up"
               style={{
@@ -44,9 +44,9 @@ const LYSProducts = () => {
                   </h1>
                 </div>
               </div>
-            </div>
+            </button>
 
-            <div
+            <button
               className="card h-[500px] transform-gpu cursor-pointer bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
               // data-aos="fade-up"
               style={{
@@ -64,7 +64,7 @@ const LYSProducts = () => {
                 </div>
               </div>
               <div className="absolute inset-0 rounded-xl bg-black opacity-0"></div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
