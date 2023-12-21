@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import Lottie from "lottie-react";
-import animationData from "@/app/assets/background/Animation - 1702286188462.json";
-import animationMobile from "@/app/assets/background/Animation - 1702409924509.json";
 import AOS from "aos";
 import B2G from "@/app/assets/b2gProduct/lepure.jpg";
 //import "aos/dist/aos.css";
