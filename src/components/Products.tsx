@@ -64,7 +64,7 @@ export default function Benefit() {
         <div className="card rounded-box my-14 grid h-[700px] flex-grow place-items-center bg-base-100">
           <div className="-mt-10 text-center" data-aos="fade-up" id="content1">
             <h1 className="mb-5 text-xl font-bold">
-              Vital Cell Softgels Premium Extract For Women
+              Vital Cell Softgels Premium Extract Recommended For Women
             </h1>
 
             <p className="m-5">
@@ -198,7 +198,7 @@ export default function Benefit() {
         <div className="pt-10 card rounded-box grid h-[600px] flex-grow place-items-center bg-base-100 ">
           <div className="text-center" data-aos="fade-up" id="content3">
             <h1 className="mb-5 text-xl font-bold">
-              Vital Cell Softgels Marine Premium For Men
+              Vital Cell Softgels Marine Premium Recommended For Men
             </h1>
 
             <p className="mb-5">
