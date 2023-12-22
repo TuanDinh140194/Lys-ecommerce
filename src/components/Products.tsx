@@ -192,7 +192,7 @@ export default function Benefit() {
             backgroundImage: `url(${marinePremium.src})`, // Use backgroundImage to set the image
             backgroundSize: "100% 100%", // Set the desired background size
             backgroundRepeat: "no-repeat", // Set the background repeat property
-            backgroundPositionX: "center",
+            backgroundPositionX: "center", //Set the background position center
           }}
         ></div>
         <div className="pt-10 card rounded-box grid h-[600px] flex-grow place-items-center bg-base-100 ">
