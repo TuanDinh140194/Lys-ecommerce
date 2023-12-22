@@ -12,16 +12,29 @@ export default function Introduction() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://static.elfsight.com/platform/platform.js";
+  //   script.setAttribute("data-use-service-core", "true");
+  //   script.defer = true;
+
+  //   document.body.appendChild(script);
+
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.setAttribute("data-use-service-core", "true");
-    script.defer = true;
+    script.src = "https://embedsocial.com/cdn/ht.js";
 
-    document.body.appendChild(script);
+    script.id = "EmbedSocialHashtagScript";
+
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     };
   }, []);
 
@@ -188,13 +201,30 @@ export default function Introduction() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 lg:gap-8 xl:gap-10">
+          <div className="grid w-full grid-cols-1 gap-6 lg:gap-8 xl:gap-10">
             <div data-aos="fade-up">
-              <div className="card-body items-center gap-4 text-center backdrop-blur backdrop-filter">
-                <div
+              {/* <div
                   className="elfsight-app-15fe3b1c-1ff1-4df6-875f-ae39e00c5ca6"
                   data-elfsight-app-lazy
-                ></div>
+                ></div> */}
+              <div
+                className="embedsocial-hashtag"
+                data-ref="5aa25a509397055b59a15eaf0b1cc58cee092470"
+              >
+                {" "}
+                <a
+                  className="feed-powered-by-es feed-powered-by-es-slider-img"
+                  href="https://embedsocial.com/social-media-aggregator/"
+                  target="_blank"
+                  title="Instagram widget"
+                >
+                  {" "}
+                  <img
+                    src="https://embedsocial.com/cdn/images/embedsocial-icon.png"
+                    alt="EmbedSocial"
+                  />{" "}
+                  Instagram widget{" "}
+                </a>{" "}
               </div>
             </div>
           </div>
