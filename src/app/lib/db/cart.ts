@@ -76,29 +76,7 @@ export async function createCart(): Promise<ShoppingCart> {
     subtotal: 0,
   };
 }
-export async function clearCart() {
-  const localCartId = cookies().get("localCartId")?.value;
-  const userId = await getUserId();
-  clearUserCart(userId);
-  if (localCartId) {
-    await prisma.cart.delete({
-      where: { id: localCartId },
-    });
-    cookies().set("localCartId", "");
-  }
-}
 
-export async function clearUserCart(userId: string | null) {
-  const userCart = await prisma.cart.findFirst({
-    where: { userId },
-  });
-
-  if (userCart) {
-    await prisma.cart.delete({
-      where: { id: userCart.id },
-    });
-  }
-}
 
 export async function getUserId(): Promise<string | null> {
   const session = await getServerSession(authOptions);

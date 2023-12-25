@@ -2,21 +2,26 @@
 
 import { BsBagCheckFill } from "react-icons/bs";
 import { runFireworks } from "../lib/utils";
+import Link from "next/link";
 import Stripe from "stripe";
 
 import React, { useEffect } from "react";
 
 interface Props {
   customerDetails: Stripe.Checkout.Session.CustomerDetails | null;
+  clearCart: () => Promise<void>;
 }
 
-const CheckoutSession =  ({ customerDetails }: Props) => {
-  useEffect ( () => {
-    if (customerDetails) {
-      runFireworks();
-      
-    }
-  }, [customerDetails]);
+const CheckoutSession = ({ customerDetails, clearCart }: Props) => {
+  useEffect(() => {
+    const fetchData = async () => {
+      if (customerDetails) {
+        runFireworks();
+        await clearCart();
+      }
+    };
+    fetchData();
+  }, []);
 
   if (!customerDetails) {
     return (
@@ -43,6 +48,9 @@ const CheckoutSession =  ({ customerDetails }: Props) => {
           info@b2greene.com
         </a>
       </p>
+      <Link href="/shop">
+        <button className="btn btn-info">Continue Shopping</button>
+      </Link>
     </div>
   );
 };
