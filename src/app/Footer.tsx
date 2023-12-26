@@ -20,9 +20,21 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">Company</span>
-          <a className="link-hover link">About us</a>
-          <a className="link-hover link">Contact</a>
-          <a className="link-hover link">Jobs</a>
+          <a
+            className="link-hover link"
+            href="https://www.facebook.com/LoveYourselfWithLYS"
+            target="_blank"
+          >
+            Facebook
+          </a>
+          <a
+            className="link-hover link"
+            href="https://www.instagram.com/lyso.fficial/"
+            target="_blank"
+          >
+            Instagram
+          </a>
+          <a className="link-hover link">B2Greene Website</a>
           <a className="link-hover link">Press kit</a>
         </div>
         <div>
