@@ -6,7 +6,7 @@ const getStripe = () => {
   if (!stripePromise) {
     stripePromise = loadStripe(
       process.env.STRIPE_PUBLIC_KEY ??
-        "pk_test_51ON9NiIyNJBxTIRYjsCkWJcDDVerd8VyvgM46cTwPl6lIbTfsxU4U07SX9xahp5YBHui5buYmzomnU4Ou1LnstCF00oHH9gKjm",
+        "pk_live_51ON9NiIyNJBxTIRY7I2UZc8W1XEV87cK0e2tmA6hm9X0d9ekL1BjANGsEbZql0Mfmpa4umqGURJhPA14Zt9XYRmT00HaQA4u20",
     );
   }
   return stripePromise;
