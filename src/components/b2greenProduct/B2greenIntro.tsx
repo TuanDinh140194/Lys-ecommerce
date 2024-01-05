@@ -1,7 +1,7 @@
 "use client";
 
-import B2G from "@/app/assets/b2gProduct/B2Green3 (1).png";
-import B2G3 from "@/app/assets/b2gProduct/B2Green8.png";
+import B2G from "@/app/assets/b2gProduct/B2Green.png";
+import B2G3 from "@/app/assets/b2gProduct/B2Green1.png";
 import B2G4 from "@/app/assets/b2gProduct/B2Green10.png";
 import B2GLogo from "@/app/assets/b2gProduct/B2GreenLogo.png";
 import Image from "next/image";
@@ -32,8 +32,8 @@ const b2gProduct = [
   {
     src: B2G3,
     alt: "Picture3",
-    width: 400,
-    height: 400,
+    width: 500,
+    height: 500,
     title: "Medicated Essential Oil",
     desciption:
       "Bringing many uses in supporting treatment process of Sinusitis, Rhinitis, Arthritis, Pains (Head, Shoulders, Nape, ...), relieves itching and swelling caused by insect bites.",
@@ -93,7 +93,7 @@ export default function B2Greene() {
     <div>
       <div className="min-h-64 group hero my-20 h-[700px] rounded-3xl bg-base-200 bg-opacity-80 shadow-xl transition-opacity duration-300 ease-in-out">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="relative max-w-sm w-[70%] lg:w-2/3 lg:max-w-none ">
+          <div className="relative max-w-sm w-[50%] md:w-[40%] lg:w-2/3 lg:max-w-none ">
             <Image
               src={currentImage.src}
               alt={currentImage.alt}
