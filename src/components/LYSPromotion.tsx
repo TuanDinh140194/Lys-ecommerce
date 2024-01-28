@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Promotion1 from "@/app/assets/lysPromotion/Promotion3.jpg";
-import Promotion2 from "@/app/assets/lysPromotion/Promotion5.jpg";
+import Promotion1 from "@/app/assets/lysPromotion/newyearPromotion.jpg";
+import Promotion2Vid from "@/app/assets/lysPromotion/newyearclip.gif";
 // import animationData from "@/app/assets/background/Animation - 1703143535399.json";
 // import Lottie from "lottie-react";
 import { useRouter } from "next/navigation";
@@ -67,9 +67,11 @@ const LYSPromotion = () => {
         <div className="relative flex items-center justify-center">
           <div className="text-center">
             <h2 className="mb-4 text-3xl font-bold sm:text-5xl">
-              2024 Best Seller
+              Lunar New Year Gift Set
             </h2>
-            <p className="mb-6 text-lg sm:text-2xl">Your daily reminder. On the go..</p>
+            <p className="mb-6 text-lg sm:text-2xl">
+              Your daily reminder. On the go..
+            </p>
           </div>
 
           {/* <div className="absolute right-0 z-10 mt-20 mr-16 w-1/3 md:mt-48 md:mr-32 lg:w-auto lg:mt-10 xl:mr-64">
@@ -102,13 +104,14 @@ const LYSPromotion = () => {
               className="card h-[700px] transform-gpu cursor-pointer bg-[#e4eefd] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
               // data-aos="fade-up"
               style={{
-                backgroundImage: `url(${Promotion2.src})`, // Use backgroundImage to set the image
+                backgroundImage: `url(${Promotion2Vid.src})`, // Use backgroundImage to set the image
                 backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat", // Set the background repeat property
                 backgroundPosition: "center", // Center the background image
               }}
               onClick={() => router.push("/b2green")}
             ></button>
+
           </div>
         </div>
       </div>
