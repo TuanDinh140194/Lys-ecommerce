@@ -97,7 +97,7 @@ const LYSPromotion = () => {
                 backgroundRepeat: "no-repeat", // Set the background repeat property
                 backgroundPosition: "center", // Center the background image
               }}
-              onClick={() => router.push("/b2green")}
+              onClick={() => router.push("/shopB2Greene")}
             ></button>
 
             <button
@@ -109,7 +109,7 @@ const LYSPromotion = () => {
                 backgroundRepeat: "no-repeat", // Set the background repeat property
                 backgroundPosition: "center", // Center the background image
               }}
-              onClick={() => router.push("/b2green")}
+              onClick={() => router.push("/shopB2Greene")}
             ></button>
 
           </div>
