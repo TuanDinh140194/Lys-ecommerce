@@ -70,10 +70,10 @@ const LYSPromotion = () => {
               Lunar New Year Gift Set
             </h2>
             <p className="mb-6 text-lg sm:text-2xl">
-              Buy 3 get 1 gift set 1 Le+pure (pack of 2)
+              Buy 3 get 1 New Year Gift set Le+pure (pack of 2)
             </p>
             <p className="text-lg">
-              From 31/1 to 14/2
+              From 01/31 - 02/20
             </p>
           </div>
 
