@@ -39,7 +39,13 @@ export default function AboutB2G() {
               aims for must achieve the values of friendliness, quality,
               efficiency, and safety.
             </p>
-            <button className="btn btn-info">Visit Page</button>
+            <a
+              className="btn btn-info"
+              href="http://b2greene.com/"
+              target="_blank"
+            >
+              Visit Page
+            </a>
           </div>
         </div>
       </div>
