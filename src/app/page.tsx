@@ -15,7 +15,7 @@ export default function Landing() {
     <div className="max-w-7xl">
       
       <LYSIntro/>
-      <LYSPromotion/>
+      {/* <LYSPromotion/> */}
       <LYSProducts/>
       <Ingredient />
       <AboutUs/>
